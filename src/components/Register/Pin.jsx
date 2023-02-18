@@ -39,23 +39,27 @@ const Pin = () => {
               <h5>Enter your 4 digit pin</h5>
 
               <div className="map">
-                {
-                  otp.map( (data, index) => {
-                    return (
-                      <input
-                        key={index}
-                        className='otp_field' 
-                        value={data} 
-                        type="text"
-                        name="otp"
-                        maxLength="1"
-                        placeholder="*" 
-                        onChange={e => handleChange(e.target, index)}
-                        onFocus={e => e.target.select()}
-                      />
-                    )
-                  })
-                }    
+                {/* <input type="text" name="finalotp"> */}
+                  {console.log('new', 'finalotp')}
+                  {console.log('new2', otp.join(""))}
+                  {
+                    otp.map( (data, index) => {
+                      return (
+                        <input
+                          key={index}
+                          className='otp_field' 
+                          value={data} 
+                          type="text"
+                          name={otp.join("")}
+                          maxLength="1"
+                          placeholder="*" 
+                          onChange={e => handleChange(e.target, index)}
+                          onFocus={e => e.target.select()}
+                        />
+                      )
+                    })
+                  }    
+                {/* </input> */}
               </div>              
               <div className='register__linkUp'>
                   <Link to='/' className='register__linkUpLink'>
@@ -63,7 +67,7 @@ const Pin = () => {
                   </Link>
               </div>
               <div className="buttonR">
-                <button type='submit' className='register__registerButton' onClick={e => alert("Entered PIN is " + otp.join(""))}>Proceed</button>
+                <button type='submit' className='register__registerButton' onClick={e => otp.join("")}>Proceed</button>
               </div>
             </form>
                 <div className="buttonB">
