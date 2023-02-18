@@ -26,6 +26,11 @@ const Pin = () => {
         </Link> */}
 
         <div className="register__header">
+          <div className="logo">
+              <Link to='/' className='logoLink'>
+                <h1 className='logoHeader'>M</h1>
+              </Link>
+          </div>
           <div className="register__headerText">
             <h1>Welcome back,</h1>
             <h1>Eag#####</h1>
