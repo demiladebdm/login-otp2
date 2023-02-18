@@ -60,6 +60,7 @@ const Pin = () => {
                           placeholder="*" 
                           onChange={e => handleChange(e.target, index)}
                           onFocus={e => e.target.select()}
+                          required
                         />
                       )
                     })
