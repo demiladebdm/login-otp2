@@ -54,6 +54,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 1px solid lightgrey;
+}
+.map input[type=text]:focus {
+    outline: 1px solid red;
 }
 .register__linkUp {
     margin-top: 10px;

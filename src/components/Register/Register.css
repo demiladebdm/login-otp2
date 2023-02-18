@@ -49,6 +49,9 @@
     padding: 0 20px;
     border: 1px solid lightgray;
 }
+.register__containerUp>form>input:focus {
+    border: 2px solid red;
+}
 .register__linkUp {
     display: flex;
     justify-content: flex-end;
